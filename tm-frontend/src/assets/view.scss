@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+  --primary-clr: #215ba8;
+  --primary-clr-lighter20: #4d7bb9;
+  --primary-clr-darker20: #1a4886;
+  --primary-clr-lighter60: #a6bddc;
+  --dark-grey: #555555;
+  --dark-grey-lighter20: #777777;
+  --dark-grey-darker20: #444444;
+  --light-grey: #fafafa;
+  --light-grey-lighter20: #fbfbfb;
+  --light-grey-darker20: #c8c8c8;
+  --text-dark-grey: #333333;
+  --text-dark-grey-lighter20: #5b5b5b;
+  --text-dark-grey-darker20: #282828;
+  --text-light-grey: #e5e5e5;
+  --text-light-grey-lighter20: #eaeaea;
+  --text-light-grey-darker20: #b7b7b7;
+  --success-clr: #61ab51;
+  --warning-clr: #dc8333;
+  --failure-clr: #c94e4e;
+  --dark-theme-grey1: #2d343d;
+  --dark-theme-grey1-lighter20: #575c63;
+  --dark-theme-grey1-darker20: #242930;
+  --dark-theme-grey2: #222932;
+  --dark-theme-grey2-lighter20: #4e535b;
+  --dark-theme-grey2-darker20: #1b2028;
+
+  .display1 {
+    font-family: "Open Sans", sans-serif;
+    color: var(--primary-clr);
+    background-color: white;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1.5;
+  }
+  .display2 {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-dark-grey);
+    background-color: white;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1.5;
+  }
+  .display3 {
+    font-family: "Open Sans", sans-serif;
+    color: var(--primary-clr);
+    background-color: white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.5;
+  }
+  .display4 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.5;
+    color: white;
+    background-color: var(--primary-clr);
+  }
+  .headline {
+    font-family: "Open Sans", sans-serif;
+    color: var(--primary-clr);
+    background-color: white;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.5;
+  }
+  .title {
+    font-family: "Open Sans", sans-serif;
+    color: var(--primary-clr);
+    background-color: white;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.5;
+  }
+  .subheading1 {
+    font-family: "Open Sans", sans-serif;
+    color: var(--primary-clr);
+    background-color: white;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1.5;
+  }
+  .subheading2 {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-dark-grey);
+    background-color: white;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1.5;
+  }
+  .body1 {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-dark-grey-lighter20);
+    background-color: white;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.5;
+  }
+  .body1span {
+    font-family: "Open Sans", sans-serif;
+    color: var(--primary-clr-lighter20);
+    background-color: white;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.5;
+  }
+  .body2 {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-dark-grey-darker20);
+    background-color: white;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.5;
+  }
+  .menu {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-dark-grey-lighter20);
+    background-color: white;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5;
+  }
+  .submenu {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-dark-grey-lighter20);
+    background-color: white;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.5;
+  }
+  .tablehead {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-light-grey-darker20);
+    background-color: white;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.5;
+  }
+  .breadcrumb {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-light-grey-darker20);
+    background-color: white;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.5;
+  }
+  .caption{
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-light-grey-darker20);
+    background-color: white;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5;
+  }
+
+  .input-div {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 0.3em;
+
+    
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="email"] {
+      border: 1px solid var(--light-grey-darker20);
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 1em;
+    }
+    .basic-multi-select,
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="date"],
+    input[type="email"]:focus {
+      outline: none;
+    }
+
+    // .basic-multi-select{
+    //   padding: 1em;
+    // }
+  }
+
+  .auth-btn {
+    width: 90%;
+    padding: 1em;
+    background-color: var(--primary-clr);
+    color: var(--text-light-grey-lighter20);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5;
+    border-radius: 5px;
+
+    &:disabled {
+      background-color: var(--primary-clr-lighter60);
+    }
+
+    &:hover {
+      background-color: var(--primary-clr-lighter20);
+    }
+  }
+
+  .content-card {
+    padding: 2em 1em;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  .input-validation-msg {
+    font-family: "Open Sans", sans-serif;
+    color: var(--failure-clr);
+    background-color: white;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.5;
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 500, "GRAD" -25, "opsz" 48;
+  }
+}

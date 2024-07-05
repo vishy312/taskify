@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-clr: #215ba8;
+    --primary-clr-lighter20: #4d7bb9;
+    --primary-clr-darker20: #1a4886;
+    --primary-clr-lighter60: #a6bddc;
+    --dark-grey: #555555;
+    --dark-grey-lighter20: #777777;
+    --dark-grey-darker20: #444444;
+    --light-grey: #fafafa;
+    --light-grey-lighter20: #fbfbfb;
+    --light-grey-darker20: #c8c8c8;
+    --text-dark-grey: #333333;
+    --text-dark-grey-lighter20: #5b5b5b;
+    --text-dark-grey-darker20: #282828;
+    --text-light-grey: #e5e5e5;
+    --text-light-grey-lighter20: #eaeaea;
+    --text-light-grey-darker20: #b7b7b7;
+    --success-clr: #61ab51;
+    --warning-clr: #dc8333;
+    --failure-clr: #c94e4e;
+    --dark-theme-grey1: #2d343d;
+    --dark-theme-grey1-lighter20: #575c63;
+    --dark-theme-grey1-darker20: #242930;
+    --dark-theme-grey2: #222932;
+    --dark-theme-grey2-lighter20: #4e535b;
+    --dark-theme-grey2-darker20: #1b2028;
+  }
+}

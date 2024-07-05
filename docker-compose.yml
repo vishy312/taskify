@@ -1,0 +1,46 @@
+services:
+  tm-front:
+    build:
+      context: ./tm-frontend
+      dockerfile: Dockerfile.reactUI
+    ports:
+      - "80:80"
+    depends_on:
+      - tm-back
+    container_name: reactUI
+    networks:
+      - tm-network
+
+  tm-back:
+    build: 
+      context: ./tm-backend
+      dockerfile: Dockerfile.node
+    ports:
+      - "8080:8080"
+    depends_on:
+      - tm-db
+    container_name: expressServer
+    networks:
+      - tm-network
+
+  tm-db:
+    volumes:
+      - tm-db-volume:/data/db
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    container_name: mongoDb
+    restart: always
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=secret_pass
+      - MONGO_INITDB_DATABASE=taskmanager
+    networks:
+      - tm-network
+
+volumes:
+  tm-db-volume:
+
+networks:
+  tm-network:
+    driver: bridge
